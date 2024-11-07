@@ -1,0 +1,188 @@
+/* Variáveis de Cores */
+:root {
+    --cor-fundo: linear-gradient(180deg, #2a2d4e, #1a1a2e);
+    --cor-roxo: #4c2a85;
+    --cor-rosa: #ff6584;
+    --cor-botao: #4ea5ff;
+}
+
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: var(--cor-fundo);
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    color: var(--cor-rosa);
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    color: #ddd;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--cor-botao);
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    transform: scale(1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #3d8ce0;
+    transform: scale(1.05);
+}
+
+.sobre {
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.benefit-item {
+    text-align: center;
+    max-width: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px);
+}
+
+.planos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.plano-card {
+    background-color: #3c1a5b;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.plano-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.destaque {
+    background-color: var(--cor-rosa);
+}
+
+.plano-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.plano-card p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.plano-card button {
+    padding: 10px 20px;
+    background-color: var(--cor-botao);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.plano-card button:hover {
+    background-color: #3d8ce0;
+}
+
+.depoimentos {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.depoimento-card {
+    background-color: #2d1a4a;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 10px auto;
+    transition: transform 0.3s;
+}
+
+.depoimento-card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #1a1a2e;
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .benefits, .planos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
